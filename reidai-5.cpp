@@ -8,7 +8,7 @@ int main() {
   int N, A, B;
   cin >> N >> A >> B;
   int result = 0;
-  for (int i = 1; i < N; ++i) {
+  for (int i = 1; i <= N; ++i) {
     int x = calc_sum_digits(i);
     if (A <= x && x <= B)  result += i;
   }
